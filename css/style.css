@@ -70,9 +70,9 @@ body {
 
 .navigation {
     position: fixed;
-    margin-top: 30px;
-    margin-left: 30px;
+    left: 50%;
     top: 0%;
+    width: 100%
     word-spacing: 20px;
     color: white;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.459);
