@@ -1,0 +1,103 @@
+body {
+    background-image: url(../IMAGES/background-image1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.top-txt {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+
+.bot-txt {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+
+.nameText {
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    line-height: 0.1;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(5, 19, 0, 0.342);
+}
+
+.button1 {
+    margin-left: 100px;
+    border-radius: 30px;
+    background-color: transparent;
+    color: white;
+    border-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-width: 2px;
+}
+
+.button1:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 51, 0);
+    cursor: pointer;
+}
+
+.introtxt {
+    margin-left: 100px;
+    color: white;
+    font-size: small;
+}
+
+/* about me style */
+
+.navigation {
+    position: fixed;
+    margin-top: 30px;
+    margin-left: 30px;
+    top: 0%;
+    word-spacing: 20px;
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.459);
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+body#about, body#skills, body#resume, body#portfolio {
+    background-image: url(../IMAGES/background-image2.png);
+    background-repeat: no-repeat;
+}
+
+body#resume, body#portfolio {
+    background-image: url(../IMAGES/background-image2.png);
+    background-repeat: no-repeat;
+}
+
+.AMtxt {
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+
+
