@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
         <title>Portfolio!</title>
-    <head>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+        <head>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Luxurious+Script&family=Montserrat:ital@1&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="css/style.css">
+        </head>
 
     <body id="portfolio">
         <div class="navigation">
@@ -13,6 +18,29 @@
             <a href="resume.html">RESUME</a>
             <a href="portfolio.html">PORTFOLIO</a>
             </div>
-       <p>portfolio</p>
+
+            <div class="portfolio-container">
+                <div class="drive-link">
+                    <a href="https://drive.google.com/drive/folders/1thoDS7-lZTEaYNzhnSwN48AbeV-5BCwD?usp=drive_link" target="_blank">View more on Google Drive!</a>
+                </div>
+        
+                <div class="gallery-container">
+                    <button class="arrow left" id="left-arrow">&#10094;</button>
+        
+                    <div class="image-gallery" id="gallery">
+                        <img src="IMAGES/FBC-HS-DPBLAST.png" alt="Graphic Design 1">
+                        <img src="IMAGES/FL'25Theme_20241022172131.png" alt="Graphic Design 2">
+                        <img src="IMAGES/VirtualInk.png" alt="Graphic Design 3">
+                    </div>
+        
+                    <button class="arrow right" id="right-arrow">&#10095;</button>
+                </div>
+        
+                <div class="gallery-text">
+                    <p>Graphic Designs</p>
+                </div>
+            </div>
+        
+            <script src="portfolio.js"></script>
     </body>
 </html>
