@@ -80,6 +80,7 @@ body {
 
 .button1 {
     margin-left: 300px;
+    border: 3px solid #ffffff;
     border-radius: 30px;
     background-color: transparent;
     color: white;
@@ -103,7 +104,7 @@ body {
 
 .introtxt {
     margin-left: 300px;
-    color: white;
+    color: #516725;
     font-size: small;
     animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
@@ -138,14 +139,26 @@ a {
     color: white;
 }
 
-body#about, body#skills, body#resume, body#portfolio {
+body#about, body#skills {
     background-image: url(../IMAGES/background-image2.png);
     background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100vh;
 }
 
 body#resume, body#portfolio {
     background-image: url(../IMAGES/background-image2.png);
     background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100vh;
 }
 
 @keyframes fadeInOpacity {
@@ -157,111 +170,319 @@ body#resume, body#portfolio {
 	}
 }
 
-.AMtxt {
-    color: white;
-    text-align: center;
-    padding: 100px;
-    margin: 40px;
-    margin-top: 300px;
+body#about {
+    margin: auto;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    height: 100vh;
     animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
 	animation-duration: 2s;
-    font-family: "Montserrat", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
+}
+
+.about-container {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    margin-top: 50px;
+    margin: auto;
 }
 
 .aia-image {
-    animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 2s;
-    position: absolute;
-    margin: 0 auto;
-    max-width: 100%;
-    top: 8%;
-    margin-left: 40%;
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+
+.AMtxt {
+    margin-top: 5px;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: center;
+    max-width: 90%;
+    margin-left: auto;
     margin-right: auto;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
 }
 
 /*skills*/
 
-.myskills {
+body#skills {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
     animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
 	animation-duration: 1s;
-    padding: 150px;
-    display: block;
-    content: " ";
-    clear: both;
-    margin: 150px;
 }
 
-.column1 {
-    float: left;
-    padding: 60px;
-    margin: 30px;
+.skills-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    gap: 40px;
+    margin: auto;
 }
 
-.column2 {
-    float: right;
-    padding: 60px;
-    margin: 30px;
+.column {
+    flex: 30%;
+    margin: 50px;
+    min-width: 300px;
 }
-
-.progress { 
-    background-color: #516725; 
-    width: 150%; 
-    border-radius: 20px; 
-} 
-
-.skill { 
-    background-color: #ffffff; 
-    color: #516725; 
-    padding: 5%; 
-    text-align: right; 
-    font-size: 14px; 
-    font-family: "Montserrat", serif;
-    font-weight: 600;
-    border-radius: 20px; 
-} 
 
 .skills-h1 {
+    text-align: center;
+    color: #333;
+    font-size: 50px;
+    margin-bottom: 20px;
     font-family: "Instrument Serif", serif;
     font-optical-sizing: auto;
-    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.144);
+    color: white;
+    text-decoration: underline;
 }
 
-.p-skills {
+.progress-bar {
+    margin-bottom: 15px;
+}
+
+.skill-name {
+    font-size: 16px;
+    margin-bottom: 5px;
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 600;
     color: white;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.html { 
-    width: 80%; 
-} 
+.bar-container {
+    background-color: #516725;
+    border-radius: 50px;
+    overflow: hidden;
+    height: 30px;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-.ADP { 
-    width: 100%; 
-} 
+.bar {
+    background-color: #ffffff;
+    height: 100%;
+    transition: width 0.5s ease-in-out;
+}
 
-.css { 
-    width: 80%; 
-} 
+.percentage {
+    font-size: 14px;
+    text-align: right;
+    color: #ffffff;
+    margin-top: 5px;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
 
-.ADI { 
-    width: 100%; 
-} 
+/*resume*/
 
-.js { 
-    width: 80%; 
-} 
+body#resume {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
 
-.ADILL { 
-    width: 100%; 
-} 
+.resume-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+    margin: auto;
+}
 
+.RSleft-column {
+    flex: 0.6;
+    padding-right: 20px;
+    line-height: 1.5;
+}
+
+.RSright-column {
+    flex: 0.4;
+    padding-left: 20px;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.resume-h2 {
+    font-size: 40px;
+    color: #ffffff;
+    font-family: "Instrument Serif", serif;
+    font-optical-sizing: auto;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.144);
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 5px;
+}
+
+.resume-p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 5px;
+    line-height: 0.5;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.144);
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+
+}
+
+.RSright-column ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.RSright-column ul li {
+    margin-bottom: 10px;
+}
+
+.RSright-column ul li a {
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #516725;
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+}
+
+.RSright-column ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .RSleft-column,
+    .right-column {
+        flex: 1;
+        padding: 10px 0;
+    }
+
+    .RSright-column {
+        border-left: none;
+    }
+
+    .RSright-column ul li a {
+        font-size: 16px;
+    }
+}
+
+/*portfolio*/
+
+body#portfolio {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+.portfolio-container {
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.drive-link a {
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #516725;
+    border-radius: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+
+.drive-link a:hover {
+    text-decoration: underline;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.image-gallery {
+    display: flex;
+    overflow-x: hidden;
+    width: 80%;
+    gap: 20px;
+}
+
+.image-gallery img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin: auto;
+    border: 2px solid #ffffff;
+}
+
+.arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    border-radius: 15px;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.gallery-text p {
+    font-size: 40px;
+    color: #ffffff;
+    margin-top: 20px;
+    font-family: "Instrument Serif", serif;
+    font-optical-sizing: auto;
+    text-decoration: underline;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.144);
+}
